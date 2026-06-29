@@ -111,3 +111,42 @@ Analyze the plot to identify any out-of-control points or trends that might indi
 :::
 
 ::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Control Chart for PartLength
+
+This X-bar control chart displays the `PartLength` for data filtered by `Machine = 1`, `Pressure = 100kPa`, and `Temperature = 303K`.
+
+**Key Observations:**
+- **Target Value:** 50
+- **Upper Specification Limit (USL):** 55
+- **Lower Specification Limit (LSL):** 45
+
+Analyze the plot to identify any out-of-control points or trends that might indicate process instability.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/machine1_P100_T303_control_chart.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Process Capability Chart for PartLength
+
+This chart visualizes the process capability for `PartLength` under the conditions of `Machine = 1`, `Pressure = 100kPa`, and `Temperature = 303K`. It shows the distribution of the observed data, a fitted normal distribution, and the specified Lower Specification Limit (LSL), Upper Specification Limit (USL), and Target value.
+
+The calculated Cpk value indicates whether the process is capable of producing output within the specified limits. A Cpk >= 1.0 suggests the process is capable.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/machine1_P100_T303_capability_chart.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+
+::::

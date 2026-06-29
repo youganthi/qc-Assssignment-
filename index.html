@@ -681,6 +681,48 @@ might indicate process instability.</p>
 </div>
 </div>
 </section>
+<section class="slide level1">
+
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="control-chart-for-partlength-1">Control Chart for
+PartLength</h3>
+<p>This X-bar control chart displays the <code>PartLength</code> for
+data filtered by <code>Machine = 1</code>,
+<code>Pressure = 100kPa</code>, and <code>Temperature = 303K</code>.</p>
+<p><strong>Key Observations:</strong> - <strong>Target Value:</strong>
+50 - <strong>Upper Specification Limit (USL):</strong> 55 -
+<strong>Lower Specification Limit (LSL):</strong> 45</p>
+<p>Analyze the plot to identify any out-of-control points or trends that
+might indicate process instability.</p>
+</div><div class="column" style="width:50%;">
+<iframe data-src="media/plots/machine1_P100_T303_control_chart.html" width="100%" height="500px" style="border:none;">
+</iframe>
+</div>
+</div>
+</section>
+<section class="slide level1">
+
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="process-capability-chart-for-partlength">Process Capability
+Chart for PartLength</h3>
+<p>This chart visualizes the process capability for
+<code>PartLength</code> under the conditions of
+<code>Machine = 1</code>, <code>Pressure = 100kPa</code>, and
+<code>Temperature = 303K</code>. It shows the distribution of the
+observed data, a fitted normal distribution, and the specified Lower
+Specification Limit (LSL), Upper Specification Limit (USL), and Target
+value.</p>
+<p>The calculated Cpk value indicates whether the process is capable of
+producing output within the specified limits. A Cpk &gt;= 1.0 suggests
+the process is capable.</p>
+</div><div class="column" style="width:50%;">
+<iframe data-src="media/plots/machine1_P100_T303_capability_chart.html" width="100%" height="500px" style="border:none;">
+</iframe>
+</div>
+</div>
+</section>
 <section id="bibliography" class="slide level1">
 <h1>Bibliography</h1>
 <div id="refs" class="references csl-bib-body" role="list">
